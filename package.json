@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "run:dev": "webpack-dev-server --host 0.0.0.0 --mode development --open",
+    "lint": "prettier --write '**/*.js' '**/*.jsx' '**/*.test.js' '**/*.scss' '**/*.html'",
     "build": "webpack --config webpack.config.js --mode production"
   },
   "dependencies": {
@@ -19,6 +20,7 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "node-sass": "^7.0.1",
+    "prettier": "^2.6.1",
     "sass": "^1.49.9",
     "sass-loader": "^12.6.0",
     "style-loader": "^3.3.1",
