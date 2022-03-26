@@ -5,6 +5,9 @@
   "scripts": {
     "run:dev": "webpack-dev-server --host 0.0.0.0 --mode development --open",
     "lint": "prettier --write '**/*.js' '**/*.jsx' '**/*.test.js' '**/*.scss' '**/*.html'",
+    "test:all": "jest --coverage --verbose=true --config ./jest.config.json",
+    "test:watch": "jest --watchAll --coverage --verbose=true --config ./jest.config.json",
+    "test:components": "jest --coverage --verbose=true ./src/components --config ./jest.config.json",
     "build": "webpack --config webpack.config.js --mode production"
   },
   "dependencies": {
@@ -15,10 +18,13 @@
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
     "@babel/preset-react": "^7.16.0",
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.5.1",
     "node-sass": "^7.0.1",
     "prettier": "^2.6.1",
     "sass": "^1.49.9",
