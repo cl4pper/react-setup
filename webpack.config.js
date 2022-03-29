@@ -9,6 +9,9 @@ module.exports = {
 	},
 	resolve: {
 		extensions: ['.js', '.jsx'],
+		alias: {
+			'@styles': path.resolve(__dirname, 'src/styles'),
+		},
 	},
 	devServer: {
 		static: path.resolve(__dirname, 'build'),
@@ -23,7 +26,11 @@ module.exports = {
 			},
 			{
 				test: /\.scss$/,
-				use: [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'sass-loader' }],
+				use: [
+					{ loader: 'style-loader' },
+					{ loader: 'css-loader' },
+					{ loader: 'sass-loader', options: { additionalData: '@import "~@styles/global.scss";' } },
+				],
 			},
 			{
 				test: /\.(png|svg|jpg|gif)$/,

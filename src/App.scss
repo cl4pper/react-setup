@@ -6,8 +6,9 @@
 	justify-content: center;
 
 	&__title {
-		padding: 0;
+		padding: spacing('sm');
 		margin: 0;
-		background: red;
+		background: $color-primary-dark;
+		color: $color-light;
 	}
 }
