@@ -10,7 +10,7 @@ module.exports = {
 	resolve: {
 		extensions: ['.js', '.jsx'],
 		alias: {
-			'@style': path.resolve(__dirname, 'src/styles'),
+			'@styles': path.resolve(__dirname, 'src/styles'),
 		},
 	},
 	devServer: {
