@@ -2,7 +2,7 @@ import React from 'react';
 import classnames from 'classnames';
 import * as Types from './types';
 
-import './style.scss'
+import './style.scss';
 
 const Text = (props: Types.Props): JSX.Element => {
 	const { id, content, size, italic, bold } = props;
