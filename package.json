@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "run:dev": "webpack-dev-server --host 0.0.0.0 --mode development",
-    "lint": "prettier --write '**/*.js' '**/*.jsx' '**/*.test.js' '**/*.scss' '**/*.html'",
+    "lint": "prettier --write '**/*.js' '**/*.jsx' '**/*.test.js' '**/*.ts' '**/*.tsx' '**/*.test.tsx' '**/*.scss' '**/*.html'",
     "test:all": "jest --coverage --verbose=true --config ./jest.config.json",
     "test:watch": "jest --watchAll --coverage --verbose=true --config ./jest.config.json",
     "test:components": "jest --coverage --verbose=true ./src/components --config ./jest.config.json",
@@ -24,6 +24,7 @@
     "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.14",
     "babel-loader": "^8.2.3",
+    "classnames": "^2.3.1",
     "css-loader": "^6.5.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
