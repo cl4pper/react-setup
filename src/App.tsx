@@ -1,12 +1,14 @@
 import React from 'react';
-
+import { Text } from '@components';
 // STYLE
 import './App.scss';
 
 const App = (): JSX.Element => {
 	return (
 		<div className="App">
-			<h1 className="App__title">react-setup</h1>
+			<span className="App__title">
+				<Text id="app" content="react-setup" size="lg" />
+			</span>
 		</div>
 	);
 };
