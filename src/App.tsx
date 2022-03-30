@@ -3,7 +3,7 @@ import React from 'react';
 // STYLE
 import './App.scss';
 
-const App = () => {
+const App = (): JSX.Element => {
 	return (
 		<div className="App">
 			<h1 className="App__title">react-setup</h1>
