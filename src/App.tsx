@@ -9,7 +9,10 @@ const App = (): JSX.Element => {
 			<span className="App__title">
 				<Title id="app" content="react-setup" />
 			</span>
-			<Link id="app" label="Link" href="http://www.google.com" />
+			<div className="App__links">
+				<Link id="app" label=".js" href="" size="lg" />
+				<Link id="app" label=".ts" href="https://github.com/cl4pper/react-setup" size="lg" />
+			</div>
 		</div>
 	);
 };

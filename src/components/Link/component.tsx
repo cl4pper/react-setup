@@ -10,11 +10,11 @@ const Link = (props: Types.Props): JSX.Element => {
 	function handleClick(): void {
 		window.open(href, '_blank');
 	}
-	
+
 	return (
 		// ! turn component into a <a></a> tag.
 		<span id={id} data-testid={id} className="Link" onClick={() => handleClick()}>
-			<Text id={`${id}-link-label`} content={label} size={size}/>
+			<Text id={`${id}-link-label`} content={label} size={size} />
 		</span>
 	);
 };
