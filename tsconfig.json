@@ -11,7 +11,8 @@
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "paths": {
-      "@styles": ["src/styles/global.scss"]
+      "@styles": ["src/styles/global.scss"],
+      "@components": ["src/components/index.ts"],
     },
   },
   "include": ["src"]
