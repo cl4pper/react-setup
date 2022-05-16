@@ -5,12 +5,12 @@ import * as Types from './types';
 import './style.scss';
 
 const Title = (props: Types.Props): JSX.Element => {
-	const { id, content, size, italic, bold } = props;
+	const { id, classname, content, size, italic, bold } = props;
 	return (
 		<p
 			id={id}
 			data-testid={id}
-			className={classnames('Title', {
+			className={classnames(`Title ${classname}`, {
 				'Title--small': size === 'sm',
 				'Title--medium': !size || size === 'md',
 				'Title--large': size === 'lg',
