@@ -18,7 +18,7 @@ describe('Text', (): void => {
 		const { getByTestId } = render(wrapper(props));
 
 		expect(getByTestId('jest').textContent).toBe('Text Jest.');
-		expect(getByTestId('jest').className).toBe('Text Text--medium');
+		expect(getByTestId('jest').className).toBe('Text Text--default');
 	});
 
 	it('should render small', (): void => {
@@ -57,7 +57,7 @@ describe('Text', (): void => {
 		const { getByTestId } = render(wrapper(props));
 
 		expect(getByTestId('jest').textContent).toBe('Text Jest.');
-		expect(getByTestId('jest').className).toBe('Text Text--medium Text--bold');
+		expect(getByTestId('jest').className).toBe('Text Text--default Text--bold');
 	});
 
 	it('should render italic', (): void => {
@@ -70,6 +70,6 @@ describe('Text', (): void => {
 		const { getByTestId } = render(wrapper(props));
 
 		expect(getByTestId('jest').textContent).toBe('Text Jest.');
-		expect(getByTestId('jest').className).toBe('Text Text--medium Text--italic');
+		expect(getByTestId('jest').className).toBe('Text Text--default Text--italic');
 	});
 });

@@ -12,7 +12,7 @@ const Text = (props: Types.Props): JSX.Element => {
 			data-testid={id}
 			className={classnames('Text', {
 				'Text--small': size === 'sm',
-				'Text--medium': !size || size === 'md',
+				'Text--default': !size || size === 'md',
 				'Text--large': size === 'lg',
 				'Text--bold': bold,
 				'Text--italic': italic,
