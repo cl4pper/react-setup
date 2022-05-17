@@ -1,0 +1,14 @@
+.Topbar {
+  width: 100%;
+  position: fixed;
+  top: spacing("sm");
+  left: spacing("sm");
+  @include layer("topbar");
+
+  &__title {
+		padding: spacing('sm');
+		margin: 0;
+		background: $color-primary-dark;
+		color: $color-light;
+	}
+}
