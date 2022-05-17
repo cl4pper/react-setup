@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title } from '@components';
+import { Title, Chip } from '@components';
 import * as Types from './types';
 
 // STYLE
@@ -10,7 +10,13 @@ const Topbar = (props: Types.Props): JSX.Element => {
 
   return (
     <div className="Topbar" id={id} data-testid={id}>
-      <Title id={`${id}-title`} content="react-setup" classname="Topbar__title" size="sm" />
+      <div className="Topbar__content">
+        <Title id={`${id}-title`} content="react-setup" classname="Topbar__title" size="sm" />
+        <div className="Topbar__chips">
+          <Chip id={`${id}-ts`} label="TS" active={true} />
+          <Chip id={`${id}-ts`} label="JS" active={false} />
+        </div>
+      </div>
     </div>
   )
 }
