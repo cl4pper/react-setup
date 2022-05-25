@@ -11,12 +11,4 @@ body {
 	align-items: center;
 	justify-content: center;
 	background: $color-dark;
-
-	&__links {
-		display: flex;
-		align-items: center;
-		> .Link {
-			margin: 0 spacing('lg');
-		}
-	}
 }
