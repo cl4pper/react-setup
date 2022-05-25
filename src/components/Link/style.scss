@@ -2,4 +2,9 @@
 	color: $color-primary-dark;
 	border-bottom: 1px dashed $color-primary-dark;
 	cursor: pointer;
+
+	&--empty {
+		border: none;
+		cursor: auto;
+	}
 }

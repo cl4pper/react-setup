@@ -11,19 +11,4 @@ body {
 	align-items: center;
 	justify-content: center;
 	background: $color-dark;
-
-	&__title {
-		padding: spacing('sm');
-		margin: 0;
-		background: $color-primary-dark;
-		color: $color-light;
-	}
-
-	&__links {
-		display: flex;
-		align-items: center;
-		> .Link {
-			margin: 0 spacing('lg');
-		}
-	}
 }

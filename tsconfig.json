@@ -13,6 +13,7 @@
     "paths": {
       "@styles": ["src/styles/global.scss"],
       "@components": ["src/components/index.ts"],
+      "@containers": ["src/containers/index.ts"],
     },
   },
   "include": ["src"]
