@@ -2,9 +2,9 @@ import React from 'react';
 import classsnames from 'classnames';
 import { Text } from '@components';
 import * as Types from './types';
+import './style.scss';
 
 // STYLES
-import './style.scss';
 
 const Chip = (props: Types.Props): JSX.Element => {
   const { id, label, active } = props;
