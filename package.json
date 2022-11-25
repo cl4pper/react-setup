@@ -6,7 +6,7 @@
     "run:dev": "webpack-dev-server --host 0.0.0.0 --port 8080 --mode development",
     "app:start": "docker-compose up -d",
 		"app:stop": "docker-compose stop",
-    "lint": "prettier --write '**/*.js' '**/*.jsx' '**/*.test.js' '**/*.ts' '**/*.tsx' '**/*.test.tsx' '**/*.scss' '**/*.html'",
+    "lint": "prettier --write '**/*.ts' '**/*.tsx' '**/*.test.tsx' '**/*.scss' '**/*.html'",
     "test:all": "jest --coverage --verbose=true --config ./jest.config.json",
     "test:watch": "jest --watchAll --config ./jest.config.json",
     "test:components": "jest --coverage --verbose=true ./src/components --config ./jest.config.json",
