@@ -7,8 +7,5 @@ body {
 	width: 100%;
 	height: 100vh;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background: linear-gradient(90deg, $color-primary-dark 30%, $color-dark 60%);
+	background: linear-gradient(90deg, $color-primary-dark 50%, $color-dark 50%);
 }
