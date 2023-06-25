@@ -13,6 +13,7 @@ module.exports = {
 			'@styles': path.resolve(__dirname, 'src/styles'),
 			'@components': path.resolve(__dirname, 'src/components'),
 			'@containers': path.resolve(__dirname, 'src/containers'),
+			'@context': path.resolve(__dirname, 'src/context'),
 		},
 	},
 	devServer: {
