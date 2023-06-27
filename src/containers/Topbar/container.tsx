@@ -31,6 +31,7 @@ const Topbar = (props: Types.Props): JSX.Element => {
                 id={`${id}-ts`}
                 label="TS"
                 active={theme === 'ts'}
+                custom={{ color: '#FFFFFF', background: '#0d47a1'}}
               />
           </span>
           <span onClick={() => handleTheme('js')}>
@@ -38,6 +39,7 @@ const Topbar = (props: Types.Props): JSX.Element => {
                 id={`${id}-ts`}
                 label="JS"
                 active={theme === 'js'}
+                custom={{ color: '#313131', background: '#f0db4f'}}
               />
           </span>
         </div>

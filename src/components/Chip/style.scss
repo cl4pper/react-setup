@@ -10,7 +10,6 @@
   cursor: pointer;
 
   &--active {
-    background: $color-light;
-    color: $color-dark;
+    pointer-events: none;
   }
 }
