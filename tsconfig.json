@@ -11,10 +11,11 @@
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "paths": {
+      "@context": ["src/context/index.ts"],
       "@styles": ["src/styles/global.scss"],
       "@components": ["src/components/index.ts"],
       "@containers": ["src/containers/index.ts"],
-      "@context": ["src/context/index.ts"],
+      "@pages": ["src/pages/index.ts"],
     },
   },
   "include": ["src"]
