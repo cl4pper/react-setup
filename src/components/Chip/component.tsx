@@ -4,24 +4,22 @@ import { Text } from '@components';
 import * as Types from './types';
 import './style.scss';
 
-// STYLES
-
 const Chip = (props: Types.Props): JSX.Element => {
-  const { id, label, active, custom } = props;
+	const { id, label, active, size } = props;
 
-  function customize(): { color: string, background: string } {
-    const { color, background } = custom;
-    return {
-      color: color && active ? color : '#313131',
-      background: background && active ? background : '#FFFFFF'
-    }
-  }
-
-  return (
-    <div id={id} data-testid={id} className={classnames('Chip', { 'Chip--active': active })} style={customize()}>
-      <Text id={`${id}-label`} content={label} bold={active} />
-    </div>
-  )
-}
+	return (
+		<div
+			id={id}
+			data-testid={id}
+			className={classnames('Chip', {
+				'Chip--active': active,
+				'Chip--large': size === 'lg',
+				'Chip--small': size === 'sm',
+			})}
+		>
+			<Text id={`${id}-label`} content={label} bold={active} size={size} />
+		</div>
+	);
+};
 
 export default Chip;
