@@ -10,10 +10,11 @@ module.exports = {
 	resolve: {
 		extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
 		alias: {
+			'@context': path.resolve(__dirname, 'src/context'),
 			'@styles': path.resolve(__dirname, 'src/styles'),
 			'@components': path.resolve(__dirname, 'src/components'),
 			'@containers': path.resolve(__dirname, 'src/containers'),
-			'@context': path.resolve(__dirname, 'src/context'),
+			'@pages': path.resolve(__dirname, 'src/pages'),
 		},
 	},
 	devServer: {
