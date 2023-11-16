@@ -8,9 +8,9 @@
 	color: $color-light;
 	cursor: pointer;
 
-  &:hover {
-    border-width: 3px;
-  }
+	&:hover {
+		border-width: 3px;
+	}
 
 	&--active {
 		background: $color-light;

@@ -5,22 +5,22 @@
 	left: 0;
 	@include layer('topbar');
 
-  &--ts {
-    background: $color-ts-primary;
-    color: $color-light;
-  }
+	&--ts {
+		background: $color-ts-primary;
+		color: $color-light;
+	}
 
-  &--js {
-    background: $color-js-primary;
-    color: $color-dark;
-  }
+	&--js {
+		background: $color-js-primary;
+		color: $color-dark;
+	}
 
-  &__content {
-    padding: spacing("sm");
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+	&__content {
+		padding: spacing('sm');
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
 
 	&__title {
 		padding: spacing('sm');

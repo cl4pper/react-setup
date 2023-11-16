@@ -3,20 +3,16 @@ import ThemeProvider, { ThemeContext } from './theme/context';
 import { MainContextType } from './types';
 
 const Root = createContext<MainContextType>({
-  ThemeContext
+	ThemeContext,
 });
 
 interface Props {
-	children: ReactNode
+	children: ReactNode;
 }
 
 const MainProvider: FC<Props> = (props: Props): JSX.Element => {
 	const { children } = props;
-	return (
-		<ThemeProvider>
-			{children}
-		</ThemeProvider>
-	)
+	return <ThemeProvider>{children}</ThemeProvider>;
 };
 
 export default MainProvider;
