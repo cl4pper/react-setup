@@ -1,17 +1,23 @@
 import React from 'react';
-import classsnames from 'classnames';
+import classnames from 'classnames';
 import { Text } from '@components';
 import * as Types from './types';
-
-// STYLES
 import './style.scss';
 
 const Chip = (props: Types.Props): JSX.Element => {
-	const { id, label, active } = props;
+	const { id, label, active, size } = props;
 
 	return (
-		<div id={id} data-testid={id} className={classsnames('Chip', { 'Chip--active': active })}>
-			<Text id={`${id}-label`} content={label} bold={active} />
+		<div
+			id={id}
+			data-testid={id}
+			className={classnames('Chip', {
+				'Chip--active': active,
+				'Chip--large': size === 'lg',
+				'Chip--small': size === 'sm',
+			})}
+		>
+			<Text id={`${id}-label`} content={label} bold={active} size={size} />
 		</div>
 	);
 };

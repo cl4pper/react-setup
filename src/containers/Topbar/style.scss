@@ -5,6 +5,16 @@
 	left: 0;
 	@include layer('topbar');
 
+	&--ts {
+		background: $color-ts-primary;
+		color: $color-light;
+	}
+
+	&--js {
+		background: $color-js-primary;
+		color: $color-dark;
+	}
+
 	&__content {
 		padding: spacing('sm');
 		display: flex;
@@ -15,8 +25,7 @@
 	&__title {
 		padding: spacing('sm');
 		margin: 0;
-		background: $color-primary-dark;
-		color: $color-light;
+		color: inherit;
 	}
 
 	&__chips {
