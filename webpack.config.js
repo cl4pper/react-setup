@@ -38,7 +38,13 @@ module.exports = {
 				use: [
 					{ loader: 'style-loader' },
 					{ loader: 'css-loader' },
-					{ loader: 'sass-loader', options: { additionalData: '@import "~@styles/global.scss";' } },
+					{ loader: 'sass-loader',
+						options: {
+							api: 'modern',
+							// The line bellow for a global style setup
+							// additionalData: '@import "@styles/global.scss"'
+						}
+					},
 				],
 			},
 			{
